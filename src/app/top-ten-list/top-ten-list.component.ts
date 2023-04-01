@@ -19,59 +19,202 @@ interface TopTenList {
 export class TopTenListComponent implements OnInit {
   topTenLists: TopTenList[] = [
     {
+      title: 'Top 10 Best Laptops for Remote Work in 2023',
+      items: [
+        {
+          title: 'Dell XPS 13',
+          description:
+            'The Dell XPS 13 combines a sleek design, powerful performance, and a stunning display, making it a top choice for remote work.',
+          link: '',
+        },
+        {
+          title: 'Apple MacBook Air (M1)',
+          description:
+            "The MacBook Air with Apple's M1 chip offers exceptional battery life and performance, perfect for professionals working from home.",
+          link: '',
+        },
+        {
+          title: 'Lenovo ThinkPad X1 Carbon',
+          description:
+            'The ThinkPad X1 Carbon provides a reliable and durable option for remote workers, with a fantastic keyboard and impressive battery life.',
+          link: '',
+        },
+        {
+          title: 'HP Spectre x360',
+          description:
+            'The HP Spectre x360 is a versatile 2-in-1 laptop with a sleek design, powerful performance, and excellent battery life.',
+          link: '',
+        },
+        {
+          title: 'Microsoft Surface Laptop 4',
+          description:
+            'The Surface Laptop 4 offers a stylish design, vibrant display, and solid performance, making it a great choice for remote work.',
+          link: '',
+        },
+        {
+          title: 'Asus ZenBook 13',
+          description:
+            'The Asus ZenBook 13 is a compact and lightweight laptop with strong performance, a comfortable keyboard, and impressive battery life.',
+          link: '',
+        },
+        {
+          title: 'Acer Swift 5',
+          description:
+            'The Acer Swift 5 is an ultra-thin and lightweight laptop with a vivid display and long battery life, ideal for working on the go.',
+          link: '',
+        },
+        {
+          title: 'LG Gram 14',
+          description:
+            'The LG Gram 14 offers an incredibly lightweight design and all-day battery life, making it perfect for professionals who value portability.',
+          link: '',
+        },
+        {
+          title: 'Razer Book 13',
+          description:
+            'The Razer Book 13 is a premium ultrabook with a stunning display, solid performance, and a sleek design that appeals to remote workers.',
+          link: '',
+        },
+        {
+          title: 'Google Pixelbook Go',
+          description:
+            'The Pixelbook Go is a Chromebook with a minimalist design, excellent battery life, and smooth performance, suitable for remote work tasks.',
+          link: '',
+        },
+      ],
+    },
+    {
       title: 'Top 10 E-Wallets in the Philippines',
       items: [
         {
           title: 'GCash',
-          description: 'A popular mobile wallet app that allows users to send money, pay bills, and shop online.',
+          description:
+            'A popular mobile wallet app that allows users to send money, pay bills, and shop online.',
           // link: 'https://www.gcash.com/',
           link: 'https://gcsh.app/r/hlEe7bL',
         },
         {
-          title: 'PayMaya',
-          description: 'A digital wallet that offers a convenient way to pay bills, shop online, and send money with just a few taps on your smartphone.',
+          title: 'Maya',
+          description:
+            'A digital wallet that offers a convenient way to pay bills, shop online, and send money with just a few taps on your smartphone.',
           // link: 'https://www.paymaya.com/',
           link: 'https://www.maya.ph/app/registration?invite=LE8G1ZX243VQ',
         },
         {
           title: 'Coins.ph',
-          description: 'A mobile wallet that provides an easy way to buy and sell cryptocurrencies, pay bills, and send money.',
+          description:
+            'A mobile wallet that provides an easy way to buy and sell cryptocurrencies, pay bills, and send money.',
           link: 'https://coins.ph/',
         },
         {
           title: 'GrabPay',
-          description: 'A digital wallet by Grab that allows you to pay for Grab services and make purchases at partner merchants.',
-          link: 'https://www.grab.com/ph/pay/',
-        },
-        {
-          title: 'Smart Padala',
-          description: 'A remittance service that offers cash transfers, bill payments, and loading services through its extensive agent network.',
-          link: 'https://smartpadala.ph/',
+          description:
+            'A digital wallet by Grab that allows you to pay for Grab services and make purchases at partner merchants.',
+          // link: 'https://www.grab.com/ph/pay/',
+          link: 'https://r.grab.com/r/jshu32qa',
         },
         {
           title: 'UnionBank Online',
-          description: 'UnionBank of the Philippines offers a digital banking platform that includes a mobile wallet for easy money transfers and bill payments.',
+          description:
+            'UnionBank of the Philippines offers a digital banking platform that includes a mobile wallet for easy money transfers and bill payments.',
           link: 'https://www.unionbankph.com/personal/digital-banking/online',
         },
         {
           title: 'BDO Pay',
-          description: 'A mobile wallet by BDO Unibank that offers convenient cashless transactions, bill payments, and QR code payments.',
+          description:
+            'A mobile wallet by BDO Unibank that offers convenient cashless transactions, bill payments, and QR code payments.',
           link: 'https://www.bdo.com.ph/bdopay',
         },
         {
           title: 'LandBank Mobile Banking',
-          description: 'The mobile banking app of LandBank of the Philippines that offers a digital wallet for quick money transfers and transactions.',
+          description:
+            'The mobile banking app of LandBank of the Philippines that offers a digital wallet for quick money transfers and transactions.',
           link: 'https://www.landbank.com/mobile-banking',
         },
         {
           title: 'BPI Mobile Wallet',
-          description: 'Bank of the Philippine Islands offers a mobile wallet as part of its mobile banking app, allowing for easy money transfers, bill payments, and account management.',
+          description:
+            'Bank of the Philippine Islands offers a mobile wallet as part of its mobile banking app, allowing for easy money transfers, bill payments, and account management.',
           link: 'https://www.bpi.com.ph/mobile-banking',
         },
         {
           title: 'Metrobank Mobile Banking',
-          description: 'Metrobank\'s mobile app offers a digital wallet feature for convenient money transfers, bill payments, and account management.',
+          description:
+            "Metrobank's mobile app offers a digital wallet feature for convenient money transfers, bill payments, and account management.",
           link: 'https://www.metrobank.com.ph/mobile_banking.asp',
+        },
+        {
+          title: 'Security Bank Mobile App',
+          description:
+            'Security Bank offers a mobile wallet as part of its mobile banking app, allowing users to easily transfer money, pay bills, and manage their accounts.',
+          link: 'https://www.securitybank.com/personal/digital-banking/mobile-app/',
+        },
+      ],
+    },
+
+    {
+      title:
+        'Top 10 Budget-Friendly Laptops for an Efficient Work-From-Home Setup in 2023',
+      items: [
+        {
+          title: 'Acer Aspire 5',
+          description:
+            'The Acer Aspire 5 offers a balance of performance and affordability, making it a great budget option for a productive work-from-home setup.',
+          link: '',
+        },
+        {
+          title: 'Lenovo IdeaPad 3',
+          description:
+            'The Lenovo IdeaPad 3 is a reliable budget laptop that provides decent performance for day-to-day tasks in a remote work environment.',
+          link: '',
+        },
+        {
+          title: 'HP Pavilion 15',
+          description:
+            'The HP Pavilion 15 is a budget-friendly laptop that offers a solid performance and a comfortable keyboard, ideal for a seamless work-from-home experience.',
+          link: '',
+        },
+        {
+          title: 'Asus VivoBook 15',
+          description:
+            'The Asus VivoBook 15 is a stylish and affordable laptop with a vivid display and a comfortable keyboard, perfect for remote work.',
+          link: '',
+        },
+        {
+          title: 'Dell Inspiron 15 3000',
+          description:
+            'The Dell Inspiron 15 3000 is a budget laptop that provides a good balance of performance and value for money, suitable for working from home.',
+          link: '',
+        },
+        {
+          title: 'Microsoft Surface Go 3',
+          description:
+            'The Surface Go 3 is a budget 2-in-1 laptop with a compact design and versatile performance, ideal for those working from home on a budget.',
+          link: '',
+        },
+        {
+          title: 'Acer Chromebook 314',
+          description:
+            'The Acer Chromebook 314 is an affordable Chromebook with a long battery life and a solid performance for basic tasks in a work-from-home setting.',
+          link: '',
+        },
+        {
+          title: 'Lenovo Chromebook Flex 3',
+          description:
+            'The Lenovo Chromebook Flex 3 is a budget 2-in-1 Chromebook with a flexible design and decent performance for everyday tasks, perfect for remote work.',
+          link: '',
+        },
+        {
+          title: 'HP Chromebook 14',
+          description:
+            'The HP Chromebook 14 is an affordable laptop with a comfortable keyboard and smooth performance for basic tasks in a home office setup.',
+          link: '',
+        },
+        {
+          title: 'Asus Laptop L210',
+          description:
+            'The Asus Laptop L210 is a compact and budget-friendly laptop that offers a solid performance for everyday tasks and web browsing, suitable for a work-from-home environment.',
+          link: '',
         },
       ],
     },
@@ -139,7 +282,7 @@ export class TopTenListComponent implements OnInit {
           link: 'https://www.flexjobs.com/',
         },
       ],
-    }
+    },
   ];
 
   constructor(private elRef: ElementRef) {}
