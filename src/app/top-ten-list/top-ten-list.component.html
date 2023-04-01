@@ -1,0 +1,24 @@
+<div class="nav-container">
+    <h2>Quick Navigation</h2>
+    <ul class="quick-navigation">
+      <li *ngFor="let list of topTenLists; let i = index">
+        <a (click)="scrollTo('list' + i)">{{ list.title }}</a>
+      </li>
+    </ul>
+  </div>
+  
+  <div *ngFor="let list of topTenLists; let i = index">
+    <div class="top-ten-list-container" id="list{{ i }}">
+      <h1 class="top-ten-title">{{ list.title }}</h1>
+      <div class="top-ten-items">
+        <div *ngFor="let item of list.items; let j = index" class="top-ten-item" id="item{{ i }}_{{ j }}">
+          <h2 class="item-number">{{ j + 1 }}</h2>
+          <h2 class="item-title">{{ item.title }}</h2>
+          <p class="item-description">{{ item.description }}</p>
+          <a class="item-link" href="{{ item.link }}" target="_blank">Visit Website</a>
+        </div>
+      </div>
+    </div>
+    <hr *ngIf="i < topTenLists.length - 1">
+  </div>
+  

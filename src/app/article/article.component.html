@@ -1,0 +1,59 @@
+<div class="nav-container">
+    <h2>Quick Navigation</h2>
+    <ul class="quick-navigation">
+      <li><a (click)="scrollTo('article1')">{{ article1.title }}</a></li>
+      <li><a (click)="scrollTo('article2')">{{ article2.title }}</a></li>
+    </ul>
+</div>
+<div class="article-container" id="article1">
+    <h1 class="article-title">{{ article1.title }}</h1>
+    <div class="article-content">
+        <p>
+            In today's digital age, laptops play a significant role in our personal and professional lives. From completing work tasks to streaming our favorite shows, these versatile devices are an essential part of our daily routines. With so many options available, it's crucial to invest in a high-quality laptop that meets your needs and stands the test of time. In this article, we'll discuss the importance of investing in a reliable laptop and how it can enhance your overall computing experience.
+        </p>
+        <div class="article-image">
+            <img src="{{ article1.imageSrc }}" alt="Laptop image" />
+        </div>
+        <ng-container *ngFor="let section of article1.sections">
+            <h2>{{ section.title }}</h2>
+            <p>{{ section.content }}</p>
+        </ng-container>
+        <div class="conclusion">
+            <p>
+              Investing in a high-quality laptop is a smart decision that offers numerous benefits, including improved performance, enhanced durability, superior display and audio quality, better battery life, advanced security features, and higher resale value. By choosing a premium device, you can enjoy a seamless computing experience while safeguarding your investment for years to come.
+            </p>
+        </div>
+        <h2>Recommended Laptops</h2>
+        <p>When it comes to high-quality laptops, there are many options available to choose from. Here are three of our top recommendations:</p>
+        <ul>
+            <li><a href="https://amzn.to/3TWpzmi" target="_blank">MacBook Pro</a>: Apple's flagship laptop is known for its sleek design, powerful performance, and long battery life. With a high-resolution Retina display and advanced security features, the MacBook Pro is a top choice for professionals and creatives alike.</li>
+            <li><a href="https://amzn.to/3zkad1h" target="_blank">Dell XPS</a>: This Windows laptop offers a premium build quality, stunning display, and excellent performance. It's a great option for anyone looking for a high-end laptop that can handle demanding tasks.</li>
+            <li><a href="https://amzn.to/42SOjjj" target="_blank">Asus ZenBook</a>: With a slim and lightweight design, the ZenBook is a highly portable laptop that doesn't compromise on performance. It's a great choice for anyone who needs a powerful laptop on the go.</li>
+        </ul>
+    </div>
+</div>
+<hr>
+<div class="article-container" id="article2">
+    <h1 class="article-title">{{ article2.title }}</h1>
+    <div class="back-to-top">
+        <a href="#top">Back to Top</a>
+    </div>
+    <div class="article-content">
+        <p>
+            For many programmers, a simple black shirt is the go-to attire for work. But did you know that there are actually several advantages to wearing a plain black shirt? In this article, we'll explore the benefits of donning this classic piece of clothing in the workplace and how it can boost your productivity and overall well-being.
+        </p>
+        <div class="article-image">
+            <img src="{{ article2.imageSrc }}" alt="Black shirt image" />
+        </div>
+        <ng-container *ngFor="let section of article2.sections">
+            <h2>{{ section.title }}</h2>
+            <p>{{ section.content }}</p>
+        </ng-container>
+        <hr>
+        <h2>Recommended Simple Black T-Shirt</h2>
+        <p>By wearing a simple black shirt, you can improve your focus, boost your confidence, and enhance your overall productivity as a programmer. So next time you're getting ready for work, consider reaching for this classic piece of clothing and enjoy the benefits that come with it.</p>
+        <p>Here's a link to our top recommended simple black t-shirt:</p>
+        <p><a href="https://amzn.to/3Km7B9p">Simple Black T-Shirt</a></p>
+    </div>
+</div>
+<hr>
