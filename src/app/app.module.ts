@@ -11,20 +11,18 @@ import { ArticleComponent } from './article/article.component';
 import { TopTenListComponent } from './top-ten-list/top-ten-list.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    AboutComponent,
-    BlogComponent,
-    BlogPostComponent,
-    ArticleComponent,
-    TopTenListComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HomeComponent,
+        AboutComponent,
+        BlogComponent,
+        BlogPostComponent,
+        ArticleComponent,
+        TopTenListComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

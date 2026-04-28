@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { NgFor } from '@angular/common';
 
 @Component({
     selector: 'app-article',
     templateUrl: './article.component.html',
     styleUrls: ['./article.component.scss'],
-    standalone: false
+    imports: [NgFor]
 })
 export class ArticleComponent implements OnInit {
   article1 = {
