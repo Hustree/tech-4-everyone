@@ -1,6 +1,6 @@
-# CLAUDE.md — Agent orientation
+# AGENTS.md — Repo orientation
 
-This file orients AI coding agents working on `tech-4-everyone`. Read it before making changes.
+This file orients contributors (human or agent) working on `tech-4-everyone`. Read it before making changes.
 
 ## Project shape
 

@@ -47,7 +47,7 @@ Example: `feat(articles): add tag filtering`.
 - [ ] No `any` types introduced
 - [ ] No literal hex/rgb in SCSS — use design tokens
 - [ ] No content hardcoded in templates — go through `ContentService`
-- [ ] CLAUDE.md still accurate; updated if conventions changed
+- [ ] AGENTS.md still accurate; updated if conventions changed
 
 ## Filing an issue
 

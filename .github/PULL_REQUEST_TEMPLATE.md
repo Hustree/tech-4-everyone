@@ -8,4 +8,4 @@
 - [ ] Build passes (`npm run build`)
 - [ ] Lighthouse a11y ≥ 95 on the built artifact
 - [ ] No `any` introduced; no literal hex/rgb in SCSS
-- [ ] CLAUDE.md still accurate
+- [ ] AGENTS.md still accurate
