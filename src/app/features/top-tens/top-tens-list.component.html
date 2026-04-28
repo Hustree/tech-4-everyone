@@ -1,0 +1,13 @@
+<h1>Top-ten lists</h1>
+<ul class="list">
+  @for (t of topTens(); track t.slug) {
+    <li>
+      <a [routerLink]="t.slug">
+        <h2>{{ t.title }}</h2>
+        <p>{{ t.intro }}</p>
+      </a>
+    </li>
+  } @empty {
+    <li>No lists yet.</li>
+  }
+</ul>

@@ -1,0 +1,25 @@
+@if (list(); as l) {
+  <article>
+    <header>
+      <h1>{{ l.title }}</h1>
+      <p class="intro">{{ l.intro }}</p>
+    </header>
+    <ol class="ranking">
+      @for (item of l.items; track item.rank) {
+        <li>
+          <h3>
+            <span class="rank">#{{ item.rank }}</span>
+            @if (item.url) {
+              <a [href]="item.url" rel="noopener external">{{ item.name }}</a>
+            } @else {
+              {{ item.name }}
+            }
+          </h3>
+          <p>{{ item.blurb }}</p>
+        </li>
+      }
+    </ol>
+  </article>
+} @else {
+  <p>List not found. <a routerLink="/top-tens">Back to top-tens</a>.</p>
+}

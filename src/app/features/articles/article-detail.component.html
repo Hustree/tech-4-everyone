@@ -1,0 +1,14 @@
+@if (article(); as a) {
+  <article>
+    <header>
+      <h1>{{ a.title }}</h1>
+      <p class="meta">
+        <time [attr.datetime]="a.publishedAt">{{ a.publishedAt }}</time>
+        @for (tag of a.tags; track tag) { <span class="tag">{{ tag }}</span> }
+      </p>
+    </header>
+    <app-markdown [body]="a.body" />
+  </article>
+} @else {
+  <p>Article not found. <a routerLink="/articles">Back to articles</a>.</p>
+}
