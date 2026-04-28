@@ -14,9 +14,10 @@ interface TopTenList {
 }
 
 @Component({
-  selector: 'app-top-ten-list',
-  templateUrl: './top-ten-list.component.html',
-  styleUrls: ['./top-ten-list.component.scss'],
+    selector: 'app-top-ten-list',
+    templateUrl: './top-ten-list.component.html',
+    styleUrls: ['./top-ten-list.component.scss'],
+    standalone: false
 })
 export class TopTenListComponent implements OnInit {
   topTenLists: TopTenList[] = [
