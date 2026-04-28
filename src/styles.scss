@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'styles/tokens' as *;
+@use 'styles/reset' as *;
+@use 'styles/a11y' as *;
+
+main { display: block; max-width: var(--max-width); margin-inline: auto; padding: var(--space-4) var(--space-3); }
+header > nav { display: flex; gap: var(--space-3); padding: var(--space-3); border-bottom: 1px solid var(--color-border); }
+header > nav a { text-decoration: none; }
+header > nav a.active { font-weight: 600; }
+footer { padding: var(--space-4) var(--space-3); border-top: 1px solid var(--color-border); color: var(--color-muted); text-align: center; }
+.card-list, .article-list, .list { list-style: none; padding: 0; display: grid; gap: var(--space-3); }
+.card-list a, .article-list a, .list a { display: block; padding: var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); text-decoration: none; color: inherit; }
+.card-list a:hover, .article-list a:hover, .list a:hover { box-shadow: var(--shadow-md); }
+.meta { color: var(--color-muted); font-size: 0.9em; }
+.tag { display: inline-block; padding: 0.1em 0.5em; margin-inline-end: var(--space-1); background: var(--color-border); border-radius: var(--radius-sm); font-size: 0.85em; }
+.ranking { padding: 0; counter-reset: rank; list-style: none; }
+.ranking > li { padding: var(--space-3); border-bottom: 1px solid var(--color-border); }
+.rank { color: var(--color-accent); font-family: var(--font-mono); margin-inline-end: var(--space-2); }
+.prose { font-family: var(--font-serif); }
+.prose pre { background: var(--color-surface); border: 1px solid var(--color-border); padding: var(--space-3); border-radius: var(--radius-md); overflow-x: auto; }
+.prose code { font-family: var(--font-mono); }
