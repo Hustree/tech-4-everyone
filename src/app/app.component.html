@@ -1,8 +1,15 @@
-<nav>
-    <ul>
-      <li><a routerLink="/article">Articles</a></li>
-      <li><a routerLink="/top-ten">Top Ten Lists</a></li>
-    </ul>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+  <nav aria-label="Primary">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <a routerLink="/articles" routerLinkActive="active">Articles</a>
+    <a routerLink="/top-tens" routerLinkActive="active">Top-tens</a>
+    <a routerLink="/about" routerLinkActive="active">About</a>
   </nav>
-  <router-outlet></router-outlet>
-  
+</header>
+<main id="main">
+  <router-outlet />
+</main>
+<footer>
+  <p>Tech 4 Everyone &middot; <a href="https://github.com/Hustree/tech-4-everyone" rel="noopener external">source on GitHub</a></p>
+</footer>
