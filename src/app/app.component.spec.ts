@@ -1,33 +1,26 @@
 import { TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
+import { provideRouter } from '@angular/router';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    imports: [
-        RouterTestingModule,
-        AppComponent
-    ],
-}).compileComponents();
+      imports: [AppComponent],
+      providers: [provideRouter([])],
+    }).compileComponents();
   });
 
-  it('should create the app', () => {
+  it('creates the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    expect(fixture.componentInstance).toBeTruthy();
   });
 
-  it(`should have as title 'tech-for-all'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('tech-for-all');
-  });
-
-  it('should render title', () => {
+  it('renders the skip link, primary nav, and main landmark', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('tech-for-all app is running!');
+    const el = fixture.nativeElement as HTMLElement;
+    expect(el.querySelector('a.skip-link')?.getAttribute('href')).toBe('#main');
+    expect(el.querySelector('nav[aria-label="Primary"]')).toBeTruthy();
+    expect(el.querySelector('main#main')).toBeTruthy();
   });
 });
