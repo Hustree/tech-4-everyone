@@ -15,8 +15,6 @@
 
 A tiny tech-content blog — top-ten lists and short articles. Intentionally small, so the whole codebase reads in one sitting. Showcases modern Angular idioms (standalone components, signals, the new `@if`/`@for` control flow, the `application` builder), a strict content-as-code architecture, and an a11y-first design system built on CSS custom properties.
 
-Sibling in spirit to [`pdf-esign-starter`](https://github.com/Hustree/pdf-esign-starter) and [`e2e-payload-encryption-starter`](https://github.com/Hustree/e2e-payload-encryption-starter).
-
 ## Stack
 
 | Layer | Tech |
