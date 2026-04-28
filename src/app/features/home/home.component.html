@@ -1,0 +1,33 @@
+<section class="hero">
+  <h1>Tech 4 Everyone</h1>
+  <p>Practical tech notes, lists, and short essays — for everyone.</p>
+</section>
+
+<section aria-labelledby="articles-heading">
+  <h2 id="articles-heading">Latest articles</h2>
+  <ul class="card-list">
+    @for (article of latestArticles(); track article.slug) {
+      <li>
+        <a [routerLink]="['/articles', article.slug]">
+          <h3>{{ article.title }}</h3>
+          <p>{{ article.excerpt }}</p>
+        </a>
+      </li>
+    }
+  </ul>
+  <a routerLink="/articles">All articles →</a>
+</section>
+
+<section aria-labelledby="lists-heading">
+  <h2 id="lists-heading">Top-ten lists</h2>
+  <ul class="card-list">
+    @for (list of topTens(); track list.slug) {
+      <li>
+        <a [routerLink]="['/top-tens', list.slug]">
+          <h3>{{ list.title }}</h3>
+          <p>{{ list.intro }}</p>
+        </a>
+      </li>
+    }
+  </ul>
+</section>
