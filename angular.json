@@ -34,7 +34,10 @@
               "src/styles.scss"
             ],
             "scripts": [],
-            "browser": "src/main.ts"
+            "browser": "src/main.ts",
+            "loader": {
+              ".md": "text"
+            }
           },
           "configurations": {
             "production": {
