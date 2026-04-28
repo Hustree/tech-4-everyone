@@ -1,5 +1,5 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
-import { NgFor, NgIf } from '@angular/common';
+
 
 interface TopTenItem {
   title: string;
@@ -18,7 +18,7 @@ interface TopTenList {
     selector: 'app-top-ten-list',
     templateUrl: './top-ten-list.component.html',
     styleUrls: ['./top-ten-list.component.scss'],
-    imports: [NgFor, NgIf]
+    imports: []
 })
 export class TopTenListComponent implements OnInit {
   topTenLists: TopTenList[] = [
