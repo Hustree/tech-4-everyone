@@ -6,8 +6,18 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="A small Angular 20 SPA — top-ten lists and short articles, designed to be read and extended by humans and AI agents.">
+  <meta name="description" content="A small Angular 20 SPA — top-ten lists and short articles, kept readable end-to-end.">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') {
+          document.documentElement.setAttribute('data-theme', t);
+        }
+      } catch (_) { /* storage may be unavailable */ }
+    })();
+  </script>
 </head>
 <body>
   <app-root></app-root>
