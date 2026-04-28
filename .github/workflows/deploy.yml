@@ -35,4 +35,4 @@ jobs:
         with:
           path: dist/tech-for-all/browser
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
