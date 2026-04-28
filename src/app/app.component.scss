@@ -1,1 +1,7 @@
-header > nav a.active { background: var(--color-border); border-radius: var(--radius-sm); padding-inline: var(--space-2); }
+header > nav a.active {
+  background: var(--color-accent);
+  color: var(--color-accent-fg);
+  border-radius: var(--radius-sm);
+  padding-inline: var(--space-2);
+  text-decoration: none;
+}
